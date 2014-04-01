@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvFilterHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"       
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="@string/tv_filter_header" />
+
+    <TextView
+        android:id="@+id/tvImageSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvFilterHeader"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:text="@string/tv_image_size" />
+
+     <Spinner
+        android:id="@+id/spnImageSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tvImageSize"
+        android:layout_toRightOf="@+id/tvImageSize"
+        android:textSize="18sp" 
+        android:spinnerMode="dropdown" />
+    
+    <TextView
+        android:id="@+id/tvColorFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvImageSize"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:text="@string/tv_color_filter" />
+	
+	<Spinner
+        android:id="@+id/spnColorFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tvColorFilter"
+        android:layout_toRightOf="@+id/tvColorFilter"
+        android:textSize="18sp" 
+        android:spinnerMode="dropdown" />
+	
+    <TextView
+        android:id="@+id/tvImageType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvColorFilter"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:text="@string/tv_image_type" />
+
+    <Spinner
+        android:id="@+id/spnImageType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tvImageType"
+        android:layout_toRightOf="@+id/tvImageType"
+        android:textSize="18sp" 
+        android:spinnerMode="dropdown" />
+    
+    <TextView
+        android:id="@+id/tvSiteFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvImageType"
+      	android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:text="@string/tv_site_filter" />
+
+    <EditText
+        android:id="@+id/etSiteFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSiteFilter"
+        android:layout_toRightOf="@+id/tvSiteFilter"
+        android:ems="10"
+        android:hint="@string/et_filter_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSiteFilter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/btn_save" />
+    
+</RelativeLayout>
